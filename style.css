@@ -1,0 +1,52 @@
+body {
+    background: rgb(112, 108, 97);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .clock {
+    width: 25rem;
+    height: 25rem;
+    border: 20px solid rgb(51, 51, 51);
+    border-radius: 90%;
+    background:rgb(51, 51, 51);
+    background-image: url(https://i.pinimg.com/1200x/e5/80/aa/e580aa9114f8ee61fafe8e6e1df8d4ea.jpg);
+    background-size: cover;
+    box-shadow: 0 0 0 4px rgb(51, 51, 51), inset 0 0 0 3px #efefef,
+      inset 0 0 10px black, 0 0 10px rgb(51, 51, 51);
+    position: relative; /* Added to allow absolute positioning of hands */
+  }
+  
+  .hand {
+    background: rgb(255, 255, 255);
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  
+  .hour-hand {
+    width: 25%; /* Reduced width */
+    left: 50%;  /* Center hands properly */
+    transform-origin: 0%; /* Adjust origin to be at the left side */
+  }
+  
+  .min-hand {
+    width: 30%; /* Reduced width */
+    left: 50%;  /* Center hands properly */
+    transform-origin: 0%; /* Adjust origin to be at the left side */
+  }
+  
+  .second-hand {
+    width: 35%; /* Reduced width */
+    left: 50%;  /* Center hands properly */
+    transform-origin: 0%; /* Adjust origin to be at the left side */
+  }
+  
