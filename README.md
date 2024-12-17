@@ -1,6 +1,3 @@
-
-Here’s a description you can use to submit your code in your GitHub repository:
-
 Digital Clock with Rotating Hands
 This project implements a digital clock using HTML, CSS, and JavaScript, featuring a stylish clock face with rotating hour, minute, and second hands. The clock is designed with an elegant appearance, incorporating a background image and smooth animations for the clock hands.
 
